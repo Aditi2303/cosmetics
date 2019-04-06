@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+{% block content %}
+        <form action ="http://localhost:5000/uploader3" method = "POST"
+            enctype = "multipart/form-data">
+            <fieldset class="form-group">
+                <legend class="border-bottom mb-4">Upload the image to verify dimensions</legend>
+                <div class="form-group">
+                    <input type = "file" name = "file"/>
+                </div>
+                <div class="form-group">
+                    <input type = "submit"/>
+                </div>
+            </fieldset>
+        </form>
+    <body>
+{% endblock content %}
